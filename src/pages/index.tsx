@@ -21,22 +21,25 @@ return(
   <Box>
     <Box>
       <TableContainer>
-        
         <Table>
-          <Thead>
-            <Tr>
-              <Th>WD1A Time Table</Th>
-            </Tr>
-          </Thead>
+        <TableCaption>
           <Tbody>
             <Tr>
-              <Td>月曜日</Td>
-              <Td>火曜日</Td>
-              <Td>水曜日</Td>
-              <Td>木曜日</Td>
-              <Td>金曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+            </Tr>
+            <Tr>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
+              <Td w={'150px'}>月曜日</Td>
             </Tr>
           </Tbody>
+        </TableCaption>
         </Table>
       </TableContainer>
     </Box>
