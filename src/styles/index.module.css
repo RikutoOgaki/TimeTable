@@ -1,0 +1,12 @@
+.thead{
+    background-color: #000;
+    color: #fff;
+}
+.td{
+    width: 180px;
+    height: 30px;
+}
+.celltd{
+    width: 180px;
+    height: 100px;
+}
