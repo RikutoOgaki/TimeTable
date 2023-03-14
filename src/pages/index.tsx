@@ -2,6 +2,10 @@ import { useState } from 'react'
 import style from '@/styles/index.module.css'
 
 export default function TimeTable() {
+
+
+
+
   return (
     <>
       <table border={1}>
@@ -40,7 +44,7 @@ export default function TimeTable() {
             <td className={style.celltd} align={'center'}></td>
           </tr>
           <tr>
-            <td className={style.celltd} align={'center'}>英語</td>
+            <td className={style.celltd} align={'center'}></td>
             <td className={style.celltd} align={'center'}>映像コンテンツ</td>
             <td className={style.celltd} align={'center'}></td>
             <td className={style.celltd} align={'center'}>HTML演習</td>
