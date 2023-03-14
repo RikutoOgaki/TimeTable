@@ -3,9 +3,6 @@ import style from '@/styles/index.module.css'
 
 export default function TimeTable() {
 
-
-
-
   return (
     <>
       <table border={1}>
