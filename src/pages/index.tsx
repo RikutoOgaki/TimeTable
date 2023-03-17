@@ -34,7 +34,6 @@ export default function TimeTable() {
                   border={'1px solid #000'}>{v}</Td>
               )}
             </Tr>
-
             <Tr>
               <Td>コンセプトワーク</Td>
               <Td>クリエイティブワーク</Td>
