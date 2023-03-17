@@ -1,61 +1,78 @@
 import { useState } from 'react'
-import style from '@/styles/index.module.css'
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer,
+} from '@chakra-ui/react'
 
 export default function TimeTable() {
 
+  const day = ['月曜日', '火曜日', '水曜日', '木曜日', '金曜日']
+
   return (
     <>
-      <table border={1}>
-        <thead className={style.thead}>
-          <tr>
-            <th colSpan={5}>時間割</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className={style.td} align={'center'}>月曜日</td>
-            <td className={style.td} align={'center'}>火曜日</td>
-            <td className={style.td} align={'center'}>水曜日</td>
-            <td className={style.td} align={'center'}>木曜日</td>
-            <td className={style.td} align={'center'}>金曜日</td>
-          </tr>
-          <tr>
-            <td className={style.celltd} align={'center'}>コンセプトワーク</td>
-            <td className={style.celltd} align={'center'}>クリエイティブワーク</td>
-            <td className={style.celltd} align={'center'}>JavaScript演習</td>
-            <td className={style.celltd} align={'center'}>Photoshop演習</td>
-            <td className={style.celltd} align={'center'}>チーム制作</td>
-          </tr>
-          <tr>
-            <td className={style.celltd} align={'center'}>ビジュアルデザイン</td>
-            <td className={style.celltd} align={'center'}>クリエイティブワーク</td>
-            <td className={style.celltd} align={'center'}>JavaScript演習</td>
-            <td className={style.celltd} align={'center'}>Illustrator演習</td>
-            <td className={style.celltd} align={'center'}>チーム制作</td>
-          </tr>
-          <tr>
-            <td className={style.celltd} align={'center'}>英語</td>
-            <td className={style.celltd} align={'center'}>色彩構成</td>
-            <td className={style.celltd} align={'center'}></td>
-            <td className={style.celltd} align={'center'}>WEB演習</td>
-            <td className={style.celltd} align={'center'}></td>
-          </tr>
-          <tr>
-            <td className={style.celltd} align={'center'}></td>
-            <td className={style.celltd} align={'center'}>映像コンテンツ</td>
-            <td className={style.celltd} align={'center'}></td>
-            <td className={style.celltd} align={'center'}>HTML演習</td>
-            <td className={style.celltd} align={'center'}></td>
-          </tr>
-          <tr>
-            <td className={style.celltd} align={'center'}></td>
-            <td className={style.celltd} align={'center'}></td>
-            <td className={style.celltd} align={'center'}></td>
-            <td className={style.celltd} align={'center'}>SHL</td>
-            <td className={style.celltd} align={'center'}></td>
-          </tr>
-        </tbody>
-      </table>
+      <TableContainer>
+        <Table border={'1px solid #000'}>
+          <Thead>
+            <Tr>
+              <Th colSpan={5} bg={'#000'} color={'#fff'}>Time Table</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              {day.map((v) =>
+                <Td
+                  w={'15rem'}
+                  h={'5rem'}
+                  align={'center'}
+                  border={'1px solid #000'}>{v}</Td>
+              )}
+            </Tr>
+
+            <Tr>
+              <Td>コンセプトワーク</Td>
+              <Td>クリエイティブワーク</Td>
+              <Td>JavaScript演習</Td>
+              <Td>Illustrator演習</Td>
+              <Td>チーム制作</Td>
+            </Tr>
+            <Tr>
+              <Td>ビジュデザマラソン</Td>
+              <Td>クリエイティブワーク</Td>
+              <Td>JavaScript演習</Td>
+              <Td>Photoshop演習</Td>
+              <Td>チーム制作</Td>
+            </Tr>
+            <Tr>
+              <Td>英語</Td>
+              <Td>色彩構成</Td>
+              <Td></Td>
+              <Td>Web設計</Td>
+              <Td></Td>
+            </Tr>
+            <Tr>
+              <Td></Td>
+              <Td>映像コンテンツ</Td>
+              <Td></Td>
+              <Td>HTML演習</Td>
+              <Td></Td>
+            </Tr>
+            <Tr>
+              <Td></Td>
+              <Td></Td>
+              <Td></Td>
+              <Td>SHL</Td>
+              <Td></Td>
+            </Tr>
+          </Tbody>
+        </Table>
+      </TableContainer>
     </>
   )
 }
